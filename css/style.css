@@ -1,0 +1,101 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7;
+    color: #000;
+    background-color: #f7f7f7;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #262626;
+}
+
+.nav__logo-box{
+    width: 15rem;
+}
+
+.nav__logo{
+    width: 100%;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+.nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem;
+    padding: 2rem 0;
+}
+
+.nav__list{
+    display: flex;
+    flex: 1;
+    margin-left: 2rem;
+}
+
+.nav__item{
+    padding: 0 1.5rem;
+}
+
+.nav__link{
+    padding: 0.2rem;
+    /* transition:9 0.5s; */
+}
+
+.nav__link:hover{
+    border-bottom: 0.2rem solid #262626;
+}
+
+.showcase{
+    /* border: 1px solid black; */
+    background: #E6E6E6;
+    height: 50rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.showcase__hero{
+    width: 400px;
+}
+
+.showcase__img{
+    width: 100%;
+}
+
+.showcase__text{
+    margin-left: 3rem;
+}
+
+.showcase__btn{
+    cursor: pointer;
+    background-color: #000 ;
+    color: #fff;
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+    outline: none;
+    border: none;
+}
