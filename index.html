@@ -3,17 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <title>Microsoft|Home</title>
 </head>
 <body>
     <header class="header">
+        <!-- menu -->
         <div class="container">
+            <div class="menu-btn">
+                <i class="fas fa-bars fa-2x"></i>
+            </div>
+            <!-- nav -->
             <nav class="nav">
                 <div class="nav__logo-box">
                     <img src="images/microsoftlogo.png" alt="Microsoft" class="nav__logo">
                 </div>
-                <ul class="nav__list">
+                <ul class="nav__list nav__list--show">
                     <li class="nav__item"><a href="#" class="nav__link">Office</a></li>
                     <li class="nav__item"><a href="#" class="nav__link">Windows</a></li>
                     <li class="nav__item"><a href="#" class="nav__link">surface</a></li>
@@ -22,7 +28,7 @@
                     <li class="nav__item"><a href="#" class="nav__link">Surport</a></li>
                 </ul>
 
-                <ul class="menu">
+                <ul class="menu-right">
                     <li class="menu__list">
                         <a href="#" class="menu__link">
                             <i class="fas fa-search"></i>
@@ -36,6 +42,9 @@
                 </ul>
             </nav>
 
+            <div class="little-blue">
+                <small>read how we are responding to the covid 19 outbreak and get resources to help ></small>
+            </div>
             <div class="showcase">
                 <div class="showcase__text">
                     <h1 class="showcase__title">Microsoft 365</h1>
@@ -43,7 +52,7 @@
                         convinient subscription
                     </p>
                     <button class="showcase__btn">for up to six people</button>
-                    <span class="showcase__arrow"> <i class="fas fa-chevron-right"></i> for 1 person</span>
+                    <span class="showcase__arrow"> for 1 person <i class="fas fa-chevron-right"></i></span>
                 </div>
                 <div class="showcase__hero">
                     <img src="images/heromicrosoft.PNG" class="showcase__img">
@@ -51,5 +60,87 @@
             </div>
         </div>
     </header>
+
+    <main class="home container">
+        <!-- card 1 -->
+        <div class="card">
+            <div class="card__header">
+                <img class="card__img" src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4CFyx?ver=25c5&q=90&m=6&h=201&w=358&b=%23FFFFFFFF&l=f&o=t&x=839&y=615&aim=true" alt="">
+            </div>
+            <div class="card__body">
+                <h3 class="card__title">Microsoft Teams</h3>
+                <p class="card__content">Chat, meet, call, and collaborate</p>
+            </div>
+            <div class="card__footer">
+                <a href="" class="card__link">learn more <i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+        <!-- card 2 -->
+        <div class="card">
+            <div class="card__header">
+                <img class="card__img" src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4rzE2?ver=aa0b&q=90&m=6&h=201&w=358&b=%23FFFFFFFF&l=f&o=t&aim=true">
+            </div>
+            <div class="card__body">
+                <h3 class="card__title">Microsoft Teams</h3>
+                <p class="card__content">
+                    World-class performance with more privacy, more productivity, and more 
+                    value while you browse.
+                </p>
+            </div>
+            <div class="card__footer">
+                <a href="" class="card__link">Download now</a>
+            </div>
+        </div>
+        <!-- card 3 -->
+        <div class="card">
+            <div class="card__header">
+                <img class="card__img" src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE3hD2k?ver=6539&q=90&m=6&h=201&w=358&b=%23FFFFFFFF&l=f&o=t&aim=true">
+            </div>
+            <div class="card__body">
+                <h3 class="card__title">Microsoft Teams</h3>
+                <p class="card__content">Chat, meet, call, and collaborate</p>
+            </div>
+            <div class="card__footer">
+                <a href="" class="card__link">learn more</a>
+            </div>
+        </div>
+        <!-- card 4 -->
+        <div class="card">
+            <div class="card__header">
+                <img class="card__img" src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE37Bcs?ver=e981&q=90&m=6&h=201&w=358&b=%23FFFFFFFF&l=f&o=t&aim=true">
+            </div>
+            <div class="card__body">
+                <h3 class="card__title">Microsoft Teams</h3>
+                <p class="card__content">Chat, meet, call, and collaborate</p>
+            </div>
+            <div class="card__footer">
+                <a href="" class="card__link">learn more</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Outlook Area -->
+    <section class="outlook container">
+        <div class="outlook__text">
+            <h1 class="outlook__title">outlook for IOS and Android</h1>
+            <small class="outlook__body"> Connect. Organise. get things done</small>
+            <a href="" class="outlook__btn">Download Now</a>
+        </div>
+
+        <div class="outlook__hero">
+            <img src="images/hero2.PNG" alt="outlook page" class="outlook__img">
+        </div>
+    </section>
+
+
+
+
+
+
+<script>
+    document.querySelector('.menu-btn').addEventListener('click', () =>{
+        document.querySelector('.nav__list').classList.toggle('nav__list--show')
+    })
+</script>
 </body>
 </html>

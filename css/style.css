@@ -39,6 +39,12 @@ a{
     margin: auto;
 }
 
+.nav__logo-box{
+    width: 100px;
+}
+.nav__logo{
+    width: 100%;
+}
 .nav{
     display: flex;
     flex-wrap: wrap;
@@ -46,6 +52,7 @@ a{
     align-items: center;
     height: 6rem;
     padding: 2rem 0;
+    /* margin-bottom: 1rem; */
 }
 
 .nav__list{
@@ -56,6 +63,7 @@ a{
 
 .nav__item{
     padding: 0 1.5rem;
+    font-size: 1.3rem;
 }
 
 .nav__link{
@@ -67,19 +75,35 @@ a{
     border-bottom: 0.2rem solid #262626;
 }
 
+.menu-btn{
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    z-index: 2;
+    display: none;
+
+}
+
+.little-blue{
+    background: #0067B8;
+    text-align: center;
+    padding: 1rem;
+    color:#fff;
+}
 .showcase{
     /* border: 1px solid black; */
     background: #E6E6E6;
     height: 50rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    margin-top: 50px;
+    /* margin-top: 50px; */
 }
 
 .showcase__hero{
-    width: 400px;
+    width: 50%;
 }
 
 .showcase__img{
@@ -92,10 +116,121 @@ a{
 
 .showcase__btn{
     cursor: pointer;
-    background-color: #000 ;
+    background-color: #262626 ;
     color: #fff;
     padding: 1rem 2rem;
     margin: 1rem 0;
     outline: none;
     border: none;
+}
+
+.showcase__btn:hover{
+    border-bottom: 3px solid #fff;
+}
+
+/* Home */
+.home{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 2.5rem;
+}
+
+.card__img{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.card__link{
+    display: inline-block;
+    padding-top: 1rem;
+    color: #0067b8;
+}
+.card__link:hover{
+    border-bottom: 0.3rem solid #0067b8;
+}
+
+/* Outlook */
+
+.outlook{
+    /* height: 60rem; */
+    background: #E6E6E6;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.outlook__text{
+    width: 50%;
+}
+
+.outlook__hero{
+    width: 50%;
+}
+
+.outlook__img{
+    width: 100%;
+}
+.outlook__title{
+    /* font-size: 3rem; */
+}
+
+
+
+
+
+
+
+@media(max-width: 700px){
+    .menu-btn{
+        display: block;
+    }
+    .menu-btn:hover{
+        opacity: 0.5;
+    }
+
+    .menu-right{
+        margin-right: 5rem;
+    }
+    .nav__list{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #f2f2f2;
+        width: 50%;
+        height: 100%;
+        opacity: 0.9;
+        border-right: #ccc 1px solid;
+        transform: translateX(-500px);
+        transition: transform 0.5s ease-in-out;
+
+    }
+
+    .nav__list--show{
+        transform: translateX(-20px);
+    }
+    
+    .nav__item{
+        border-bottom: 1px solid #ccc;
+        padding: 1rem;
+        font-size: 1.4rem;
+    }
+
+    .nav__item:last-child{
+        border-bottom: 0;
+    }
+
+    .home{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width:600px){
+    .home{
+        grid-template-columns: 1fr;
+    }
 }
