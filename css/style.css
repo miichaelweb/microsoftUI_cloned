@@ -154,7 +154,7 @@ a{
 /* Outlook */
 
 .outlook{
-    /* height: 60rem; */
+    height: 50rem;
     background: #E6E6E6;
     display: flex;
     flex-wrap: wrap;
@@ -166,12 +166,22 @@ a{
     width: 50%;
 }
 
+.outlook__title{
+    font-size: 4rem;
+    font-weight: 700;
+    padding-left: 4rem;
+}
+
+.outlook__body{
+    
+}
+
 .outlook__hero{
     width: 50%;
 }
 
 .outlook__img{
-    width: 100%;
+    width: 50%;
 }
 .outlook__title{
     /* font-size: 3rem; */
@@ -209,7 +219,7 @@ a{
 
     }
 
-    .nav__list--show{
+    .navbar__list--show{
         transform: translateX(-20px);
     }
     
@@ -234,3 +244,9 @@ a{
         grid-template-columns: 1fr;
     }
 }
+
+.navbar ul li{
+
+}
+
+BEM
